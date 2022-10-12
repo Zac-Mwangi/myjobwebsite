@@ -4,8 +4,11 @@ import "./Card.css";
 
 export default function Card({ jobname, logo, company, location, salary, id }) {
   return (
-    <div className="col-md-4 my-2  ">
-      <div className="Card card p-2">
+    <div className="col-md-4 my-2" style={{ background: "white" }}>
+      <div
+        className="Card card p-2"
+        style={{ background: "whitesmoke", border: "2px solid grey" }}
+      >
         <div className="text-right">
           {" "}
           <small>Full Time</small>{" "}

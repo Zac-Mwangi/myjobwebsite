@@ -20,7 +20,7 @@ function JobDetails() {
   return (
     <DetailWrapper style={{ margin: "10% 20%" }}>
       <div>
-        <h2>{details.company}</h2>
+        {/* <h2>{details.company}</h2> */}
         <img style={{ width: "20vh" }} src={details.image} />
       </div>
       <Info style={{ padding: "0% 20%" }}>
