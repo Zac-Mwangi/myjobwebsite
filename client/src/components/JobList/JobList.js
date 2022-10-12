@@ -1,0 +1,251 @@
+import React from "react";
+import Card from "../Card/Card";
+
+export default function ({}) {
+  const jobs = [
+    {
+      id: 1,
+      job_type: "Design Engineer",
+      image:
+        "https://www.google.co.ke/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png",
+      company: "Google",
+      location: "Nairobi",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "5,100",
+    },
+    {
+      id: 2,
+      job_type: "Backend Engineer",
+      image:
+        "https://i.roamcdn.net/kazi/ke/hq/910055825a6b1fcd5d5fa8ca61bc6824/-/advertiser-img-ke-jobs-prod/dealer-images/advid15044/adv15044_1613054515.jpg",
+      company: "Eclectics International Ltd",
+      location: "Nairobi",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "2,800",
+    },
+    {
+      id: 3,
+      job_type: "Junior java developer",
+      image:
+        "https://i.roamcdn.net/kazi/ke/hq/0fe19d4a945bd62c51fd605065cd3a64/-/advertiser-img-ke-jobs-prod/dealer-images/advid7366/adv7366_1509458147.jpg",
+      company: "MSpace Solutions Ltd",
+      location: "Nairobi",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "3,300",
+    },
+    {
+      id: 4,
+      job_type: "Senior .NET Developer",
+      image:
+        "https://i.roamcdn.net/kazi/ke/hq/5399baaf49abff1b9724ab2bc97ff6b3/-/advertiser-img-ke-jobs-prod/dealer-images/advid17327/adv17327_1502683950.jpg",
+      company: "Wise & Agile Solutions Ltd",
+      location: "Remote",
+      salary: "3,500",
+    },
+    {
+      id: 5,
+      job_type: "Microsoft Excel Expert / Problem Solver",
+      image:
+        "https://i.roamcdn.net/kazi/ke/hq/9d017bed4ff1ea0e9f507b1c840903d9/-/advertiser-img-ke-jobs-prod/dealer-images/advid278394/adv278394_1654783727.jpg",
+      company: "e-MPS",
+      location: "Remote",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "3,000",
+    },
+    {
+      id: 6,
+      job_type: "Design Engineer",
+      image:
+        "https://i.roamcdn.net/kazi/ke/hq/0343593c5972a3175ded80902e5a6b63/-/advertiser-img-ke-jobs-prod/dealer-images/advid8713/adv8713_1482146740.jpg",
+      company: "ICEA LION",
+      location: "Nairobi",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "4,000",
+    },
+    {
+      job_type: "Design manufacturer",
+      image:
+        "https://www.google.co.ke/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png",
+      company: "Google",
+      location: "Nairobi",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      id: 7,
+      salary: "4,500",
+    },
+    {
+      job_type: "Tutor",
+      image:
+        "https://www.jkuat.ac.ke/centres/nakuru/wp-content/uploads/2018/02/jkuat-logo.png",
+      company: "JKUAT",
+      location: "Juja",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      id: 8,
+      salary: "400",
+    },
+    {
+      job_type: "iOS Developer",
+      image:
+        "https://static.devitjobs.uk/logo-images/digital-moneybox-limited-logo.jpg",
+      company: "Digital-Moneybox-Limited-iOS-Developer",
+      description: "",
+      location: "London",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      id: 9,
+      salary: "45,000",
+    },
+    {
+      job_type: "Web AR Developer",
+      image: "https://static.devitjobs.uk/logo-images/zappar-logo.jpg",
+      company: "Zappar",
+      location: "Barley ,London",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "35,000",
+      id: 10,
+    },
+    {
+      job_type: "Senior Software Engineer",
+      image:
+        "https://static.devitjobs.uk/logo-images/digital-moneybox-limited-logo.jpg",
+      company: "Moneybox Limited",
+      description: "",
+      location: "Hatfields ,London",
+      salary: "42,000",
+      id: 11,
+    },
+    {
+      job_type: "Senior Software Engineer",
+      image:
+        "https://static.devitjobs.uk/logo-images/digital-moneybox-limited-logo.jpg",
+      company: "Cloud Apps",
+      description: "",
+      location: "Hatfields ,London",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "42,000",
+      id: 1000,
+    },
+    {
+      job_type: "DevOps Engineer",
+      image:
+        "https://static.devitjobs.uk/logo-images/healthyhealth-group-ltd-logo.jpg",
+      company: "HealthyHealth Group Ltd",
+      description: "",
+      location: "Dufferin Street, London",
+      salary: "49,000",
+      id: 12,
+    },
+    {
+      job_type: "Frontend Developer",
+      image: "https://static.devitjobs.uk/logo-images/viddyoze-logo.jpg",
+      company: "",
+      description: "",
+      location: "Dollywaggon Way, Preston",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "30,000",
+      id: 13,
+    },
+    {
+      job_type: "Senior Software Engineer",
+      image:
+        "https://static.devitjobs.uk/logo-images/chordata-limited-logo.jpg",
+      company: "Chordata Limited",
+      location: "Nigeria",
+      salary: "5,200",
+      id: 14,
+    },
+    {
+      job_type: "Middle Frontend Developer",
+      image: "https://static.devitjobs.uk/logo-images/skippdev-logo.jpg",
+      company: "Skipp.dev",
+      location: "Nicosia, Cyprus",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "58,000",
+      id: 15,
+    },
+    {
+      job_type: "Front End Engineer",
+      image: "https://static.devitjobs.uk/logo-images/access-pay-logo.jpg",
+      company: "AccessPay",
+      location: "Manchester",
+      salary: "55,000",
+      id: 16,
+    },
+    {
+      job_type: "IT Support",
+      image: "https://img.icons8.com/color/96/000000/google-logo.png",
+      company: "Google Inc",
+      location: "FA 100, OH, USA",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "34,000",
+      id: 17,
+    },
+    {
+      job_type: "UX Designer",
+      image: "https://img.icons8.com/fluent/48/000000/instagram-new.png",
+      company: "Instagram Inc",
+      location: "FA 400, OH, USA",
+      salary: "39,000",
+      id: 18,
+    },
+    {
+      job_type: "UI Designer",
+      image: "https://img.icons8.com/officel/80/000000/dribbble.png",
+      company: "Dribbble Inc",
+      location: "FA 280, OH, USA",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "28,000",
+      id: 19,
+    },
+    {
+      job_type: "QA Developer",
+      image: "https://static.devitjobs.uk/logo-images/skippdev-logo.jpg",
+      company: "Skipp.dev",
+      location: "Chelsea",
+      url: "https://www.google.com/about/careers/applications-a/apply/f0528f5f-1071-4574-9320-141d3c5e349b/form",
+      salary: "44,000",
+      id: 20,
+    },
+    {
+      job_type: "Developer",
+      company: "Google",
+      image:
+        "https://devitjobs.uk/jobs/Digital-Moneybox-Limited-Junior-QA-Engineer",
+      salary: "2,500",
+      location: "Nairobi",
+      id: "21",
+    },
+    {
+      job_type: "IT Support",
+      company: "Safaricom",
+      image:
+        "https://p.kindpng.com/picc/s/388-3889335_safaricom-kenya-logo-hd-png-download.png",
+      salary: "1,200",
+      location: "Nairobi",
+      id: "nx5h8De",
+    },
+  ];
+  const job = jobs.map((job) => {
+    return (
+      <Card
+        key={job.id}
+        id={job.id}
+        jobname={job.job_type}
+        logo={job.image}
+        company={job.company}
+        location={job.location}
+        salary={job.salary}
+        url={job.url}
+      />
+    );
+  });
+
+  return (
+    <div className="text-dark">
+      <div className="container mt-5">
+        <div className="d-flex justify-content-between">
+          <h4 className="text-black">Available Jobs :</h4>
+        </div>
+        <div className="row mt-4 g-1">{job}</div>
+      </div>
+    </div>
+  );
+}
