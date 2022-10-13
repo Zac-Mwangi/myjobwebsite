@@ -13,7 +13,7 @@ function JobDetails() {
       .then((r) => r.json())
       .then((data) => {
         setDetails(data);
-        // console.log(data);
+        console.log(data);
       });
   }, [params.id]);
 
@@ -31,18 +31,19 @@ function JobDetails() {
           Info
         </Button>
         <Button
-          className={activeTab === "apply" ? "active" : ""}
-          onClick={() => setActiveTab("apply")}
+          className={activeTab === "reviews" ? "active" : ""}
+          onClick={() => setActiveTab("reviews")}
         >
-          Apply
+          Reviews
         </Button>
         {activeTab === "info" && (
           <div>
             <br></br>
             <h3>{details.job_type}</h3>
+            <h3>{details.location}</h3>
           </div>
         )}
-        {activeTab === "apply" && (
+        {activeTab === "reviews" && (
           <div>
             <br></br>
             <h3>{details.location}</h3>
